@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import Question from './Question'
-import 'bulma/css/bulma.min.css'
 export class App extends Component {
 constructor(props){
   super(props)
@@ -23,8 +22,8 @@ handleWrong = ()=>{
 }
   render() {
     return (
-      <div className="section">
-      <Question handleRight={this.handleRight} han  dleWrong={this.handleWrong} state={this.state}/>        
+      <div className="container">
+      <Question handleRight={this.handleRight} handleWrong={this.handleWrong} state={this.state}/>        
       </div>
     )
   }
